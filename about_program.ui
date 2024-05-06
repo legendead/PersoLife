@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>about_program</class>
+ <widget class="QDialog" name="about_program">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PersoLife - о приложении</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="meres.qrc">
+    <normaloff>:/resours/resourses/icons/вопрос.png</normaloff>:/resours/resourses/icons/вопрос.png</iconset>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>10</y>
+     <width>382</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextBrowser{
+	background: none;
+	border: none;
+	background-color: #fff;
+	border: 1px solid black;
+}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;PersoLife&amp;quot; - это удобный в использовании органайзер, разработанный для помощи в организации вашей повседневной жизни. Эта программа предоставляет широкий спектр функций и инструментов, которые помогут вам планировать свои задачи, управлять временем, хранить важные данные и оставаться организованным в любой сфере вашей жизни. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Одной из ключевых особенностей &amp;quot;PersoLife&amp;quot; является его интуитивно понятный интерфейс, что делает использование программы простым и приятным. Вы сможете легко создавать задачи, а также устанавливать приоритеты и дедлайны для каждого из них. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;С &amp;quot;PersoLife&amp;quot; вы сможете эффективно управлять своим временем, организовывать свою жизнь и достигать поставленных целей. Независимо от того, нужно ли вам планирование рабочих задач, управление личными проектами или просто напоминания о повседневных делах.&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;PersoLife&amp;quot; будет вашим надежным помощником в организации и упорядочении вашей жизни&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ссылки на источники:&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Все иконки в приложении были взяты с сайта: https://icons8.ru&lt;br /&gt;Заставка к приложению была создана с помошью нейросети: Kandinsky 2.2&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="meres.qrc"/>
+ </resources>
+ <connections/>
+</ui>

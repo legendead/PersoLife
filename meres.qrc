@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/resours">
+        <file alias="splash">resourses/splashScreen/splashscreen.jpeg</file>
+        <file>resourses/icons/автор.png</file>
+        <file>resourses/icons/вопрос.png</file>
+        <file>resourses/icons/выход.png</file>
+        <file>resourses/icons/график.png</file>
+        <file>resourses/icons/добавить_задачу.png</file>
+        <file>resourses/icons/закрыть.png</file>
+        <file>resourses/icons/открыть-папку.png</file>
+        <file>resourses/icons/файл.png</file>
+        <file>resourses/icons/удалить-все.png</file>
+        <file>resourses/icons/удалить-сделанные.png</file>
+        <file>resourses/icons/icons8-что-я-делаю-50.png</file>
+        <file>resourses/cursor/icons8-select-cursor-24.png</file>
+        <file>resourses/cursor/icons8-select-cursor-48.png</file>
+        <file>resourses/icons/icons8-запись-48.png</file>
+        <file>resourses/background/ффф.jpg</file>
+        <file>resourses/cursor/icons8-select-cursor-12.png</file>
+        <file>resourses/cursor/icons8-select-cursor-18.png</file>
+        <file>resourses/cursor/icons8-select-cursor-15.png</file>
+        <file>resourses/icons/icons8-тренер-50.png</file>
+    </qresource>
+</RCC>

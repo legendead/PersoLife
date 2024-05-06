@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>file_creating</class>
+ <widget class="QDialog" name="file_creating">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>104</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PersoLife - создание файла</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="meres.qrc">
+    <normaloff>:/resours/resourses/icons/файл.png</normaloff>:/resours/resourses/icons/файл.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Окно создания файла</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>231</width>
+     <height>89</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Создание файла</string>
+   </property>
+   <property name="title">
+    <string>Введите название файла (с расширением)</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLineEdit" name="file_name">
+      <property name="toolTip">
+       <string>Поле ввода названия файла</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="create_button">
+      <property name="toolTip">
+       <string>Кнопка создания файла</string>
+      </property>
+      <property name="text">
+       <string>Создать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="cancle_button">
+      <property name="toolTip">
+       <string>Кнопка отмены </string>
+      </property>
+      <property name="text">
+       <string>Отмена</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="meres.qrc"/>
+ </resources>
+ <connections/>
+</ui>

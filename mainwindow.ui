@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>822</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>822</width>
+    <height>454</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>822</width>
+    <height>565</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>822</width>
+    <height>565</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>822</width>
+    <height>565</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PersoLife - планировщик задач</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="meres.qrc">
+    <normaloff>:/resours/resourses/icons/icons8-что-я-делаю-50.png</normaloff>:/resours/resourses/icons/icons8-что-я-делаю-50.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Главное окно PersoLife</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>781</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Таблица с информацией о всех задачах</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="title">
+     <string>Информация о всех задачах</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>741</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>741</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>105</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>39</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Задача</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Приоритет</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Время начала</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Длительность</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Заметка</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Статус</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>781</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Сортировка задач</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>112</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Приоритет задачи</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_priority">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>140</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Выбор сортировки по приоритету задачи</string>
+     </property>
+     <property name="toolTipDuration">
+      <number>-1</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	background: none;
+	background-color: #fff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+QCombobox::disabled{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid #cccccc;
+}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>От 1 до 5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>От 5 до 1</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>73</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Дата задачи</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_date">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>71</y>
+       <width>140</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Выбор сортировки по дате задачи</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	background: none;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+QCombobox::disabled{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid #cccccc;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>От старых к новым</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>От новых к старым</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Название задачи</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="task_name_filter">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>30</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Поле ввода названия для сортировки по названию задачи</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	background-color: none;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+QLineEdit::disabled{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid #cccccc
+}</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="strict_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>73</y>
+       <width>139</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Вкл. / выкл. строгого фильтра сортировки по названию задачи</string>
+     </property>
+     <property name="text">
+      <string>Строгий фильтр</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="sens_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>73</y>
+       <width>133</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Вкл. / выкл. чувствительности к регистру сортировки по названию задачи</string>
+     </property>
+     <property name="text">
+      <string>Чувст. к регистру</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>822</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+               background: none;
+               background-color: qlineargradient(spread:pad, x1:0.0170455, y1:0.324, x2:0, y2:0, stop:0 rgba(241, 241, 241, 255), stop:1 rgba(182, 182, 182, 255));
+           };</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+      background: none;
+      background-color: qlineargradient(spread:pad, x1:0.0170455, y1:0.324, x2:0, y2:0, stop:0 rgba(241, 241, 241, 255), stop:1 rgba(182, 182, 182, 255));
+       color: #000000;
+        border: 1px solid #cccccc;
+}
+QMenu::item:disabled{
+	background-color: #cccccc;
+}</string>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="file_creating_action"/>
+    <addaction name="file_opening_action"/>
+    <addaction name="file_closing_action"/>
+    <addaction name="separator"/>
+    <addaction name="program_exit_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+      background: none;
+      background-color: qlineargradient(spread:pad, x1:0.0170455, y1:0.324, x2:0, y2:0, stop:0 rgba(241, 241, 241, 255), stop:1 rgba(182, 182, 182, 255));
+       color: #000000;
+        border: 1px solid #cccccc;
+}
+QMenu::item:disabled{
+	background-color: #cccccc;
+}</string>
+    </property>
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="program_about_action"/>
+    <addaction name="autors_action"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+      background: none;
+      background-color: qlineargradient(spread:pad, x1:0.0170455, y1:0.324, x2:0, y2:0, stop:0 rgba(241, 241, 241, 255), stop:1 rgba(182, 182, 182, 255));
+       color: #000000;
+        border: 1px solid #cccccc;
+}
+QMenu::item:disabled{
+	background-color: #cccccc;
+}</string>
+    </property>
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="tasks_adding_action"/>
+    <addaction name="tasks_graph_action"/>
+    <addaction name="tasks_clear_all"/>
+    <addaction name="tasks_clear_done"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="file_creating_action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/файл.png</normaloff>:/resours/resourses/icons/файл.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="file_opening_action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/открыть-папку.png</normaloff>:/resours/resourses/icons/открыть-папку.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="file_closing_action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/закрыть.png</normaloff>:/resours/resourses/icons/закрыть.png</iconset>
+   </property>
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="program_exit_action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/выход.png</normaloff>:/resours/resourses/icons/выход.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="program_about_action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/вопрос.png</normaloff>:/resours/resourses/icons/вопрос.png</iconset>
+   </property>
+   <property name="text">
+    <string>О приложении</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="autors_action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/автор.png</normaloff>:/resours/resourses/icons/автор.png</iconset>
+   </property>
+   <property name="text">
+    <string>Об авторах</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="tasks_adding_action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/добавить_задачу.png</normaloff>:/resours/resourses/icons/добавить_задачу.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить задачи</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="tasks_graph_action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/график.png</normaloff>:/resours/resourses/icons/график.png</iconset>
+   </property>
+   <property name="text">
+    <string>Построить график задач</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="tasks_clear_all">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/удалить-все.png</normaloff>:/resours/resourses/icons/удалить-все.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистить все задачи</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="tasks_clear_done">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/удалить-сделанные.png</normaloff>:/resours/resourses/icons/удалить-сделанные.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистить сделанные задачи</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="meres.qrc">
+     <normaloff>:/resours/resourses/icons/icons8-тренер-50.png</normaloff>:/resours/resourses/icons/icons8-тренер-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Руководство пользователя</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F1</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="meres.qrc"/>
+ </resources>
+ <connections/>
+</ui>
